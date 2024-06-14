@@ -21,6 +21,11 @@ Your final folder hierarchy should look like
 
 If so then that's it, you're good to go! 
 
+It is a bit tricky to rename projects in Visual Studio, so if you would like to apply this template to your own work, simply install SFML in the manner described above, relative to your own project folder rather than the ``Template_SFML_x64_Project`` folder. 
+Then copy over the sfml .dll files from the ``Template_SFML_x64_Project`` into the root of your project folder. 
+Finally, rename the ``Template_SFML_x64_Project.vcxproj`` file to ``MY_PROJECT_NAME.vcxproj`` and copy that to the same location as the .dll files. 
+You will need to overwrite the .vcxproj file that Visual Studio automatically creates.
+
 The build options you will need to use are ``x64`` and ``Debug`` in order for the code to compile correctly. Also ensure that your C++ Language Standard (found under ``Project > Project Properties > Configuration Properties > General > General Properties`` in Visual Studio) is set to ``ISO C++20 Standard (/std:c++20)``.
 The linker and compiler, along with the above build options and standards, should be set up appropriately by default due to the .vcxproj file included in this repository, however if Visual Studio fails to read this file for any reason, you may have to alter these settings manually. 
 If you need to change the linker and compiler settings manually, I recommend following the ``Setting up SFML`` chapter of John Horton's book [Beginning C++ Game Programming](https://subscription.packtpub.com/search?query=beginning%20c%2020%20game%20programming).
