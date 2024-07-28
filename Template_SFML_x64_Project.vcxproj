@@ -18,6 +18,9 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Template_SFML_x64_Project.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
@@ -142,23 +145,6 @@
       <AdditionalDependencies>sfml-graphics.lib;sfml-window.lib;sfml-system.lib;sfml-audio.lib;sfml-network.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="Source\Automata\MatrixGoL.cpp" />
-    <ClCompile Include="Source\Engine\SFML_Einstein_GoL.cpp" />
-    <ClCompile Include="Source\Engine\SimulationEngine.cpp" />
-    <ClCompile Include="Source\Tilings\SquareTileCell.cpp" />
-    <ClCompile Include="Source\Tilings\SquareTiling.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Source\Automata\MatrixAutomata.h" />
-    <ClInclude Include="Source\Engine\SimulationEngine.h" />
-    <ClInclude Include="Source\Engine\variables.h" />
-    <ClInclude Include="Source\Tilings\GenericTileCell.h" />
-    <ClInclude Include="Source\Tilings\GenericTiling.h" />
-    <ClInclude Include="Source\Tilings\RegularTiling.h" />
-    <ClInclude Include="Source\Tilings\SquareTileCell.h" />
-    <ClInclude Include="Source\Tilings\SquareTiling.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
